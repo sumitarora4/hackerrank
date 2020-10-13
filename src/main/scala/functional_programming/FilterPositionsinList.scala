@@ -17,7 +17,6 @@ object FilterPositionsinList {
 
     fetchOnlyValuesFromTuple
 
-
     // syntax sugar
     list.zipWithIndex.filter(_._2 % 2 !=0).map(_._1)
 
@@ -43,6 +42,12 @@ object FilterPositionsinList {
     // syntax sugar:
     list.drop(1).sliding(1,2).toList.flatten
 
+
+    //4- Fourth Solution:
+    //> oddFruits  : Iterator[String] = non-empty iterator
+    val oddFruitsIterator = Iterator.from(1, 2).takeWhile(_ < list.size).map(list(_))
+
+    oddFruitsIterator.toList
 
   }
   def main(args: Array[String]): Unit={
