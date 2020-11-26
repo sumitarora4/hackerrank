@@ -7,6 +7,7 @@ object ListReplication {
   def f(n: Int, arr: List[Int])= {
 
 //    val d = arr.map( x => for( i <- 1 to n ){x})
+//    d
 //    val d = arr.flatMap(x => List.fill(n)(x))
 //    d
 
