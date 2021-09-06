@@ -21,12 +21,15 @@ object ReverseAList {
 
     println(f(list2))
 
+    // reversing elements of List
     def f(list: List[Int]): List[Int] = {
       def reverseAux(list: List[Int], acc: List[Int]): List[Int] = {
 
         list match {
           case Nil => acc
-          case head :: tail => reverseAux(tail, head :: acc)
+          case head :: tail =>
+            println("head :: acc..."+head :: acc)
+            reverseAux(tail, head :: acc)
         }
       }
       reverseAux(list, Nil)
