@@ -1,10 +1,10 @@
-package functional_programming
+package functional_programming.introduction
 
 import java.util.Scanner
 
 object UpdateList {
 
-  def main(arr: Array[String]): Unit ={
+  def main(arr: Array[String]): Unit = {
 
     val s = new Scanner(System.in)
     val n = s.nextInt()
@@ -12,8 +12,8 @@ object UpdateList {
     //    val list = scala.collection.mutable.MutableList[Int]()
     var list = List[Int]()
 
-    for(i <- 1 to n ){
-      list = list:+ s.nextInt()
+    for (i <- 1 to n) {
+      list = list :+ s.nextInt()
     }
 
     println(f(list))
@@ -22,9 +22,9 @@ object UpdateList {
   }
 
 
-  def f(arr:List[Int]):List[Int] ={
+  def f(arr: List[Int]): List[Int] = {
 
-    val result = arr.map{f => if(f < 0) f * -1 else f}
+    val result = arr.map { f => if (f < 0) f * -1 else f }
     result
   }
 }

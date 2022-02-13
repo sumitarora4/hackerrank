@@ -1,4 +1,4 @@
-package functional_programming
+package functional_programming.introduction
 
 import java.util.Scanner
 
@@ -28,10 +28,11 @@ object ReverseAList {
         list match {
           case Nil => acc
           case head :: tail =>
-            println("head :: acc..."+head :: acc)
+            println("head :: acc..." + head :: acc)
             reverseAux(tail, head :: acc)
         }
       }
+
       reverseAux(list, Nil)
     }
   }

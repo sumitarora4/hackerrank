@@ -1,4 +1,4 @@
-package functional_programming
+package functional_programming.introduction
 
 import java.util.Scanner
 
