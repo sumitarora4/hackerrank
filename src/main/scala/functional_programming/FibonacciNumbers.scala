@@ -2,13 +2,16 @@ package functional_programming
 
 import java.util.Scanner
 
+//input: 3;
+//Output:sum of fibonacci= 2
+
 object FibonacciNumbers {
 
   def main(args: Array[String]): Unit = {
 
     val s = new Scanner(System.in)
     val n = s.nextInt()
-    print(fibonacci2(n))
+    print("sum of fibonacci="+fibonacci(n))
 
   }
 

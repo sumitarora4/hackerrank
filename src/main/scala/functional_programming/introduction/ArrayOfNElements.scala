@@ -5,9 +5,7 @@ import java.util.Scanner
 object ArrayOfNElements extends App {
 
   val s = new Scanner(System.in)
-
   val n = s.nextInt()
-
   val arr = new Array[Int](n)
 
   for (i <- 0 to n - 1) {
@@ -19,10 +17,9 @@ object ArrayOfNElements extends App {
   /**
     * if list is taken instead of Array
     */
-  println(f1(n: Int))
+  println(f(n: Int))
 
   def f(n: Int): List[Int] = {
-
     var list = List[Int](n)
 
     for (i <- 0 to n - 1) {

@@ -19,7 +19,7 @@ object StringMingling {
 
     // flatten the list of tuple of characters List[(Char, Char)] to list of character List[Char, Char]
     // mkString is to convert the list of char to comma separated char
-    println("fr=="+fr.flatten{case(a,b) => List(a,b)}.mkString(""))
+    println("result=="+fr.flatten{case(a,b) => List(a,b)}.mkString(""))
 
 
     // 2) Second  Approach
